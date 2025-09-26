@@ -1,0 +1,12 @@
+@use "sass:math";
+
+$designWidth: 1920px;
+$designHeight: 1080px;
+
+@function vm($value) {
+  @return math.div($value, $designWidth) * 100vw;
+}
+
+@function vh($value) {
+  @return math.div($value, $designHeight) * 100vh;
+}
